@@ -76,6 +76,7 @@ def generalQuiz():
 
         def checkAnswer():
             nonlocal correct
+            checkAnsButton.visible = False
             userAns = ansGet.value
             msg = f"Incorrect! The correct answer is: {question[1]}"
             msg, correct = tools.checkAns(question[1], userAns, msg, correct)
@@ -153,6 +154,7 @@ def arithmetic(a, b, operator):
 
         def checkAnswer():
             nonlocal correct
+            checkAnsButton.visible = False
             userAns = ansGet.value
             msg = f"Incorrect! {num3} {op} {num4} = {ans}"
             msg, correct = tools.checkAns(ans, userAns, msg, correct)
