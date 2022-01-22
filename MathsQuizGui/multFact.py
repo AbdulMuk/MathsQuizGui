@@ -47,6 +47,7 @@ def mfQuestions(cat):
 
         def checkAnswer():
             nonlocal correct
+            checkAnsButton.visible = False
             userAns = ansGet.value.split()
 
             if set(ans) == set(userAns):
