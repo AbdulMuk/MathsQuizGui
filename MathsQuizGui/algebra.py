@@ -399,6 +399,7 @@ def algebra(cat, type):
 
         def checkAnswer():
             nonlocal correct
+            checkAnsButton.visible = False
             userAns = ansGet.value
             msg = f"Incorrect! The correct answer is: {question[1]}"
             
