@@ -417,6 +417,7 @@ def algebra(cat, type):
                 ans = ans.replace(" ", "")
                 ans = ans.lstrip("+")
                 checkCorrect = checkCorrect or userAns == ans
+                if checkCorrect: break
 
             if checkCorrect:
                 guizero.Text(box, height=1)
